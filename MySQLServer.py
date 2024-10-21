@@ -11,8 +11,8 @@ mycursor = conn.cursor()
 try:
     if mycursor.execute("CREATE DATABASE IF NOT EXISTS alx_book_store"):
         print(f"Database 'alx_book_store' created successfully!")
-except mysql.conncetor.Error as e:
-    print(f"Error: {e}")
+except mysql.connector.Error as e:
+  print(f"Error: {e}")
 
 conn.close()
 mycursor.close()
